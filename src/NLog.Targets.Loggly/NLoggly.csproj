@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net48;</TargetFrameworks>
+
+    <Title>NLoggly</Title>
+    <Description>A custom target for NLog that sends log messages to loggly.com using the loggly-csharp library</Description>
+    <Authors>neutmute</Authors>
+    
+    <PackageTags>NLog;Loggly</PackageTags>
+    <PackageIconUrl>https://raw.githubusercontent.com/neutmute/nlog-targets-loggly/master/SolutionItems/NLoggly.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/neutmute/nlog-targets-loggly</PackageProjectUrl>
+    <PackageReleaseNotes>
+Changed from TargetWithContext to AsyncTaskTarget along with new settings:
+
+- batchSize - Number of LogEvents to send in a single batch (Default=10)
+- taskDelayMilliseconds - Artificial delay before sending to optimize for batching (Default=200 ms)
+- queueLimit - Number of pending LogEvents to have in memory queue, that are waiting to be sent (Default=10000)
+- overflowAction - Action to take when reaching limit of in memory queue (Default=Discard)
+    </PackageReleaseNotes>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/neutmute/nlog-targets-loggly.git</RepositoryUrl>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="loggly-csharp" Version="4.6.1.116" />
+    <PackageReference Include="NLog" Version="5.1.3" />
+  </ItemGroup>
+
+</Project>

@@ -1,8 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31229.75
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLog.Targets.Loggly", "src\NLog.Targets.Loggly\NLog.Targets.Loggly.csproj", "{FBA31C0A-88AC-4362-A6B2-6C6F6BEA9553}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLoggly", "src\NLog.Targets.Loggly\NLoggly.csproj", "{FBA31C0A-88AC-4362-A6B2-6C6F6BEA9553}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLog.Targets.Loggly.Tests", "test\NLog.Targets.Loggly.Tests\NLog.Targets.Loggly.Tests.csproj", "{F46F30FC-A570-4730-A527-24148C6A630C}"
 EndProject

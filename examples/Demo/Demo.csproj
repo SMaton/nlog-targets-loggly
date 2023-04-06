@@ -2,18 +2,18 @@
 
   <PropertyGroup>
     <OutputType>exe</OutputType>
-    <TargetFrameworks>net461</TargetFrameworks>
+    <TargetFrameworks>net48</TargetFrameworks>
     <IsPackable>false</IsPackable>
     <DebugType>Full</DebugType>
     <ProjectConfigFileName>App.config</ProjectConfigFileName>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\NLog.Targets.Loggly\NLog.Targets.Loggly.csproj" />
+    <ProjectReference Include="..\..\src\NLog.Targets.Loggly\NLoggly.csproj" />
   </ItemGroup>
 
 </Project>

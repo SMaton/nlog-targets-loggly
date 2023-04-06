@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net461</TargetFrameworks>
+    <TargetFrameworks>net48</TargetFrameworks>
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
     <DebugType>Full</DebugType>
@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\NLog.Targets.Loggly\NLog.Targets.Loggly.csproj" />
+    <ProjectReference Include="..\..\src\NLog.Targets.Loggly\NLoggly.csproj" />
   </ItemGroup>
 
 </Project>

@@ -92,7 +92,6 @@ namespace NLog.Targets
         public LogglyTarget()
         {
             ClientFactory = () => new LogglyClient();
-            OptimizeBufferReuse = true;
             IncludeEventProperties = true;
             BatchSize = 10;
             TaskDelayMilliseconds = 200;    // Increase chance of batching

@@ -136,7 +136,8 @@ namespace NLog.Targets.Loggly.Tests
             logglyTarget.ClientFactory = () => logglyClientMock;
             logFactory.Configuration = logConfig;
             NLog.Logger logger = logFactory.GetLogger(MethodInfo.GetCurrentMethod().Name);
-            using (NLog.MappedDiagnosticsLogicalContext.SetScoped("hello", logger.Name))
+            
+            using (NLog.ScopeContext.PushProperty("hello", logger.Name))
             {
                 logger.Info("Hello World");
                 logglyClientMock.LogWritten.WaitOne(1000);
